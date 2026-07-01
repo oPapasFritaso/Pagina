@@ -1,5 +1,11 @@
 body {
-    background: linear-gradient(135deg, #fce4ec 0%, #ead2f1 50%, #ead2f1 100%);
+    background: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.5) 3px, transparent 4px),
+        radial-gradient(circle, rgba(255, 255, 255, 0.5) 3px, transparent 4px),
+        linear-gradient(135deg, #fce4ec 0%, #ead2f1 50%, #ead2f1 100%);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+    background-position: 0 0, 20px 20px, 0 0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
