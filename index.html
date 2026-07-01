@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="awacate">
+        <div class="calculator-body">
+            <div class="display-container">
+                <div id="operation"></div> <input type="text" id="display" disabled value="0"> </div>
+            
+            <div class="buttons-grid">
+                <button class="btn ac-btn" onclick="clearDisplay()">AC</button>
+                <button class="btn op-pink" onclick="calculatePercentage()">%</button>
+                <button class="btn op-pink" onclick="calculateSquareRoot()">√</button>
+                <button class="btn op-pink" onclick="appendValue('/')">÷</button>
+                
+                <button class="btn num-blue" onclick="appendValue('7')">7</button>
+                <button class="btn num-blue" onclick="appendValue('8')">8</button>
+                <button class="btn num-blue" onclick="appendValue('9')">9</button>
+                <button class="btn num-blue" onclick="appendValue('*')">X</button>
+                
+                <button class="btn num-purple" onclick="appendValue('4')">4</button>
+                <button class="btn num-purple" onclick="appendValue('5')">5</button>
+                <button class="btn num-purple" onclick="appendValue('6')">6</button>
+                <button class="btn num-purple" onclick="appendValue('-')">-</button>
+                
+                <button class="btn num-pink" onclick="appendValue('1')">1</button>
+                <button class="btn num-pink" onclick="appendValue('2')">2</button>
+                <button class="btn num-pink" onclick="appendValue('3')">3</button>
+                <button class="btn num-yellow" onclick="appendValue('+')">+</button>
+                
+                <button class="btn num-yellow" onclick="appendValue('00')">00</button>
+                <button class="btn num-yellow" onclick="appendValue('0')">0</button>
+                <button class="btn num-yellow" onclick="appendValue('.')">.</button>
+                <button class="btn num-yellow" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
